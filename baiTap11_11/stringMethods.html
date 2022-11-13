@@ -7,6 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo3">Banana and Banana </p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        let text = "Apple, Pineapple, Kiwi";
+        let part = text.slice(-12,-6);
+
+        document.getElementById("demo").innerHTML = part;
+        let str = "PineApple, Mango, Watermelon";
+        let part2 = str.substring(-2);//same as slice() but start and end value less than 0 are treated as 0 in.
+        document.getElementById("demo2").innerHTML = str.substr(10,6); 
+
+        function myFunction(){
+            let text2 = 
+            document.getElementById('demo3').innerHTML;
+            document.getElementById('demo3').innerHTML 
+            =
+            text2.replace(/Banana/g,'Mango');
+        }
+
+        let text3 = "I love mango. Mango is very good to eat. Mango is very popular."
+        text3 = text3.replaceAll("Mango", "Banana");
+        text3 = text3.replaceAll("mango","banana");
+
+        document.getElementById('demo4').innerHTML = text3;
+
+        let text4 = "8";
+        document.getElementById('demo5').innerHTML = text4.padStart(4,"x");
+
+        let text5 = "Mango";
+        const myArr = text5.split("");
+        text5 ="";
+        for (let i=0;i<myArr.length; i++) {
+            text5 +=myArr[i] + "<br>"
+        }
+        document.getElementById('demo6').innerHTML = text5;
+
+    </script>
 </body>
 </html>
