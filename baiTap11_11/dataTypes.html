@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let x = 123e5;
+        let y = 123e-5;
+        let g = 12300000;
+        
+        const cars = ['Saab', 'Volvo', 'BMW'];
+        const person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "blue"
+        };
+        document.getElementById('demo').innerHTML = (x == g) + "<br>" + (x == y);
+        document.getElementById('demo2').innerHTML = person.firstName + ' is ' + person.age + ' years old.';
+        document.getElementById('demo3').innerHTML = 
+        typeof "" + "<br>" + typeof "John" + 4 +"<br>"+ typeof 4 + "Doe";
+    </script>
+</body>
+</html>
