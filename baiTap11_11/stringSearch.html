@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let str = "Please locate where 'locate' occurs!";
+
+        document.getElementById('demo').innerHTML = str.indexOf('locate') + ' ' + str.lastIndexOf('locate',15);
+         let text = "The rain in SPAIN stays mainly in the plain";
+         const myArr = text.match(/ain/gi);
+         document.getElementById('demo1').innerHTML = myArr.length + ' ' + myArr;    
+        
+        let text1 = "I love cats. Cats are very easy to love. Cats are very popular."
+        const iterator = text1.matchAll(/Cats/gi);
+
+        document.getElementById('demo2').innerHTML = Array.from(iterator);
+
+        let text2 = "Hello world, welcome to the universe.";
+        document.getElementById("demo3").innerHTML = text2.includes("world",12);
+    </script>
+</body>
+</html>

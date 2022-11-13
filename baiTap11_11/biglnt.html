@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let x = 123456789012345678901234567890n;
+        let y = BigInt("123456789012345678901234567890");
+        document.getElementById("demo").innerHTML = x + "<br>" + y;
+        let  z = Number.MAX_SAFE_INTEGER;
+        document.getElementById("demo1").innerHTML = z;
+        document.getElementById("demo2").innerHTML =
+        Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+    </script>
+</body>
+</html>
