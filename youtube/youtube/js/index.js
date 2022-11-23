@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function loadVideo(keyword) {
     var YOUTUBE_API = "https://content.googleapis.com/youtube/v3/search?q=" 
     + keyword 
-    + "&type=video&maxResults=9&part=snippet&key=AIzaSyCO_f4mE8n4Pw1R0XN3xUZO1tXUAXHuCHw";
+    + "&type=video&maxResults=9&part=snippet&key=AIzaSyAgcu5hHwkjkQNvD8jgZhVZAi-I7pRSM4I";
     var xhr = new XMLHttpRequest();
     xhr.open("GET", YOUTUBE_API, true);
     xhr.onreadystatechange = function() {
