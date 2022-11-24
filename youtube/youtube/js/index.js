@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     loadVideo("Đen vâu");
   });
+
+  
   
   var modal = document.getElementById('myModal');
   

@@ -116,7 +116,23 @@ header::after{
     border-radius: 5px;
 }
 
+#buttons {
+    text-align: center;
+    max-width: 1020px;
+    margin: 0 auto;
+}
 
+button {
+    background-color: #d7d7d7;
+    padding: 3px 10px 4px 10px;
+    border-radius: 7px;
+}
+
+button:hover, button.active {
+    background-color: black;
+    color: #f1f1f1;
+    cursor: pointer;
+}
 
 .modal {
     display: none;
