@@ -63,7 +63,7 @@ $('.slider').each(function() {
     }
     $button.on('click', function() {
       move(index);
-    }).appendTo('slide-buttons');
+    }).appendTo('.slide-buttons');
     buttonArray.push($button);
   });
   advance();
