@@ -82,6 +82,9 @@ span {
     padding: 3px;
     margin: 5px 0 5px 0;
 }
+.form-group input:focus {
+    border: 2px solid #287ae6;
+}
 .last {
     flex-direction: row;
 
@@ -123,18 +126,36 @@ span {
     margin: auto;
     margin-top: 15px;
   }
-  .language select {
+.language select {
     border: none;
     float: left;
     width: 40%;
     height: 2rem;
   }
-  .language .help {
+.language .help {
     float: right;
   }
-  .language .help  button {
+.language .help  button {
       border: none;
       background-color: white;
       padding: 0px;
       margin-right: 5px;
-  }
+}
+
+form div i {
+    position: absolute;
+    padding: 10px;
+}
+.failure-icon, 
+.error{
+    color: red;
+}
+
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+.failure-icon {
+    right: 0;
+    opacity: 0;
+}
