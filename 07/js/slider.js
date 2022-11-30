@@ -31,14 +31,14 @@ $('.slider').each(function() {
         });
 
     $group.animate({
-    left: animateLeft
+       left: animateLeft
   }, function() {
     $slides.eq(currentIndex).css ({
       display:'none'
     });
-    $slides.eq(newIndex).css ({
-      left:0
-    });
+     $slides.eq(newIndex).css ({
+       left:0
+     });
     $group.css ({
       left:0
     });
