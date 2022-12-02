@@ -10,7 +10,7 @@ let fullname = id("fullName"),
     errorMsg = classes("error");
     form = id("form");
 
-form.addEventListener('submit',function (e) {
+form.addEventListener('submit',(e) => {
     e.preventDefault();
     console.log(2323);
     engine(fullname,0,"Full name can not be blank!");
@@ -18,7 +18,7 @@ form.addEventListener('submit',function (e) {
     engine(password,2,"Password can not be blank!");
 });
 
-let engine = (id,serial,message) =>{
+let engine = (id,serial,message) => {
     if(id.value.trim()===""){
         errorMsg[serial].innerHTML = message;
         id.style.border ="2px solid red";
