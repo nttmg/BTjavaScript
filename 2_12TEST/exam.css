@@ -63,9 +63,12 @@ input {
     width: 100%;
     border: 1px solid #e9ecef;
     height: 40px;
+    padding: 5px;
 }
 select {
     width: 100%;
+    height: 40px;
+    border: 1px solid #e9ecef;
 }
 .icon {
     background-color: #e9ecef;
